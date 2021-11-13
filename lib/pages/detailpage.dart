@@ -153,7 +153,7 @@ class _DetailPageState extends State<DetailPage> {
               Slider.adaptive(
                 value: position.inSeconds.toDouble(),
                 min: 0.0,
-                max: duration.inSeconds.toDouble() + 50.0,
+                max: duration.inSeconds.toDouble() + 200,
                 activeColor: Color(0xFF1B5E20),
                 inactiveColor: Colors.black54,
                 onChanged: (value) {},
