@@ -150,25 +150,10 @@ class _DetailPageState extends State<DetailPage> {
               SizedBox(
                 height: 42.0,
               ),
-              SafeArea(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      position.toString().split('.')[0],
-                      style: TextStyle(fontSize: 15.0, color: Colors.white54),
-                    ),Text(
-                      duration.toString().split('.')[0],
-                      style: TextStyle(fontSize: 15.0, color: Colors.white54),
-                    ),
-                  ],
-                ),
-              ),
-
               Slider.adaptive(
                 value: position.inSeconds.toDouble(),
                 min: 0.0,
-                max: duration.inSeconds.toDouble() + 100.0,
+                max: duration.inSeconds.toDouble() + 1.0,
                 activeColor: Color(0xFF1B5E20),
                 inactiveColor: Colors.black54,
                 onChanged: (value) {},
